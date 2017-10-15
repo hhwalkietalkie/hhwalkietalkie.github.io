@@ -4,12 +4,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta charset="utf-8"> 
 <title>ut international office</title>
-<link type="text/css" media="(max-width: 600px)" href="css/mobilezzsc.css" rel="stylesheet" />
-<link type="text/css" media="(min-width: 600px)" href="css/zzsc.css" rel="stylesheet" />
-<link rel="stylesheet" media="(max-width: 600px)" href="css/mobile.css" />
+<link type="text/css" media="(max-width: 640px)" href="css/mobilezzsc.css" rel="stylesheet" />
+<link type="text/css" media="(min-width: 641px)" href="css/zzsc.css" rel="stylesheet" />
+<link rel="stylesheet" media="(max-width: 640px)" href="css/mobile.css" />
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/zzsc.js"></script>
-	<style type="text/css" media="(min-width: 600px)">
+	<style type="text/css" media="(min-width: 641px)">
 	ul.menu
 	{
 		margin:0;
@@ -381,7 +381,25 @@
 }
 }
 	</style>
-	
+	<script type="text/javascript">
+   (function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if(clientWidth>=640){
+                    docEl.style.fontSize = '100px';
+                }else{
+                    docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                }
+            };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+  </script>
 </head>
 <body>
 	<div id="volet_clos">
