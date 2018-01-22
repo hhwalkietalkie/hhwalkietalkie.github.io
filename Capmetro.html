@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Sacramento", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('capmetro/bus-1868507 (1).jpg');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("capmetro/Slide1.JPG");
+    min-height: 400px;
+}
+
+.bgimg-4 {
+    background-image: url("capmetro/CONTEXTUAL.png");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("capmetro/work.jpg");
+    min-height: 400px;
+}
+.mockup{
+  background-image: url('chewy/Untitled-1.png');
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-left" style="margin-left: 150px;">
+  <img src="capmetro/Group 63.png" width="200" style="margin-left: 200px;">
+  <h4 style="color: white">One possible way of redesigning CapMetro’s user interface<br>
+
+through reinventing the experience of user’s interaction with the application<br>
+
+by providing a fast, accurate, convenient, and reliable service experience</h4>
+  </div>
+  <div style="position: relative;">
+    <img style="position:absolute; right: 350px; top: 200px; z-index:1;" width="250" src="chewy/Untitled-1.png" />
+    <img style="position:absolute; right: 364px; top: 263px;  z-index:2" width="220" src="capmetro/iPhone 6-7-8 – 5.png" />
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="CONCEPT">
+  <h3 class="w3-center">CONCEPT</h3>
+  <p>Capital Metro is Austin’s regional public transportation provider and its official application “CapMetro” offers quick trip planning tools, online ticketing, real-time arrival information and other features to make transportation easy. 
+
+The current issues that we are aiming to solve are based on our interpretation of the inconsistent or mismatch of information between Capital Metro’s online website and mobile application system, inaccurate time arrival and schedule information (does not always provide real time information), overlap of features that serve the same purpose, and features that are not intuitive for users. </p>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="PROCESS">
+  <h3 class="w3-center w3-padding-32">OVERALL PROCESS</h3>
+  <img src="capmetro/Group 1.png" class="w3-round w3-image" alt="PROCESS" width="1200" height="333">
+</div>
+
+<div class="bgimg-4 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">RESEARCH</span>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64">
+  <p>Our team gathered information regarding the CapMetro mobile application through browsing and exploring through the application by using the system. Before we could decide on the sample size for our data gathering and the interview questions, we used this method in order to familiarize ourselves with the application system. We found that the application mainly allows users to do the following tasks:</p>
+<li>Buy and use public transit tickets</li>
+<li>View real-time departure and arrival information (view schedule)</li>
+<li>View route maps</li>
+<li>Plan trips in advance based on departure and arrival location and time</li>
+<li>Find the next nearest departure location and time</li>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="COMPETETIVE">
+  <h3 class="w3-center">CONTEXUAL INQUIRY</h3>
+  <P>After we had familiarized ourselves with the application system and what user tasks are made possible through the system, we decided to gather user data through conducting interviews to learn about how actual users of the application respond and interact with the system to gain a good idea of thinking about the redesign of the system for users. These interviews allowed for observation of user behavior, what steps and routine users take to interact with the application and their attitude and feeling toward their usage of the system.</P>
+  <div class="w3-col m4 w3-center w3-padding-large">
+<p><i class="fa fa-users w3-margin-right"></i>12 Paticipants</p>
+</div>
+<div class="w3-col m4 w3-center w3-padding-large">
+<p><i class="fa fa-mars w3-margin-right"></i>10 Female Paticipants</p>
+</div>
+<div class="w3-col m4 w3-center w3-padding-large">
+<p><i class="fa fa-venus w3-margin-right"></i>2 Male Paticipants</p>
+</div>
+<div style="margin-left: 100px;"><p>Age: 20-27</p>
+<p>Four types of occupation status:</p>
+<li>UT Graduate Student(8)</li>
+<li>UT Teaching Assistant(1)</li>
+<li>Graduate from community college/working(1)</li>
+<li>UT Undergraduate Student(2)</li>
+</div>
+  <div class="w3-padding-32">
+  <img src="capmetro/CONTEXTUAL.png" class="w3-round w3-image" alt="CONTEXTUAL" width="1200" height="333">
+  </div>
+</div>
+
+  <div class="w3-content w3-container w3-padding-32" id="USER">
+  <h3 class="w3-center">AFFINITY DIAGRAM<br></h3>
+  <p>The Work Activity Affinity Diagram (WAAD) was created as soon as we had completed the interviews.Then we took a close look into all the responses of each interviewee and created the activity notes based on what they had said. We had categorized the notes into clusters based on related themes that we identified from the interview data collected.</p>
+<p>We did a walkthrough of the Work Activity Affinity Diagram (WAAD) and extracted 14 representative work activity notes to develop requirements implied in the notes. </p>
+  <div class="w3-col m9 w3-center w3-padding-large">
+    <img src="capmetro/waad.jpg" class="w3-round w3-image" alt="waad" width="622">
+      </div>
+
+      <div class="w3-col m3 w3-center w3-padding-large">        
+    <img src="capmetro/waad1.jpg" class="w3-round w3-image" alt="waad1" width="200">
+    <img src="capmetro/waad2.jpg" class="w3-round w3-image" alt="waad2" width="200">
+      </div>
+    </div>
+
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">IDEATION & DESIGN</span>
+  </div>
+</div>
+      
+<div class="w3-content w3-container w3-padding-64" id="USER2">
+    <h3 class="w3-center">INFORMING MODELS</h3>
+<div class="w3-container">
+  <h2>Slideshow Caption</h2>
+  <p>Add a caption text for each image slide with the w3-display-* classes (topleft, topmiddle, topright, bottomleft, bottommiddle, bottomright or middle).</p>
+</div>
+<div class="w3-content w3-display-container">
+<div class="w3-display-container mySlides">
+  <img src="capmetro/USER MODEL.png" alt="user model" style="width:100%">
+</div>
+<div class="w3-display-container mySlides">
+  <img src="capmetro/FLOW MODEL.png" style="width:100%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    Flow Model
+  </div>
+</div>
+<div class="w3-display-container mySlides">
+  <img src="capmetro/HIERACHICAL TASK INVENTORY.png" style="width:100%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    Hierachical Task Inventory
+  </div>
+</div>
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+</div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64">
+   <h3 class="w3-center">PERSONA</h3>
+   <img src="capmetro/PrimaryPersona.jpg" alt="persona" width="700" style="margin-left: 120px">
+</div>
+<div class="w3-content w3-container w3-padding-64">
+   <h3 class="w3-center">STODYBOARD</h3>
+   <div class="w3-col m6 w3-padding-large">
+   <img src="capmetro/image1.jpg" alt="persona" width="500">
+   <li>Frame1: Kevin gets out from a bar in the evening, he cannot drive home.</li>
+<li>Frame2: He picks up his phone and gets in CapMetro and input his address. The bus information shows up and he finds that he can take route 100 to go home.</li>
+<li>Frame 3: When arriving at the bus stop, he finds that he doesn’t have enough money to buy a ticket, so he chooses to buy a ticket in CapMetro.</li>
+<li>Frame 4: After the bus arrives, Kevin shows the driver his ticket on his screen, and the driver let him get on the bus.</li>
+ </div>
+   <div class="w3-col m6 w3-padding-large">
+   <img src="capmetro/image2.jpg" alt="persona" width="500">
+   <li>Frame 1: Arora goes to the bus stop early, but she doesn’t bring her umbrella. isn’t worry about the bus will come because the alarm will ring when the bus comes.</li>
+<li>Frame 2: She picks up her phone and get in the CapMetro and finds out there is ten minutes left for the next bus to come. So she sets up an alarm. </li>
+<li>Frame 3: Arora goes back home to take her umbrella.</li>
+<li>Frame 4: After getting the umbrella Arora comes to the bus stop again. Her alarm rings and the bus arrives.</li>
+</div>
+</div>
+
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-black w3-wide">PROTOTYPING & USABILITY TESTING</span>
+  </div>
+</div>
+<div class="w3-content w3-container w3-padding-32">
+  <div class="w3-content w3-container w3-padding-32">
+    <h3 class="w3-center">LOW FIDELITY PROTOTYPE</h3>
+     <p>Our team decided to focus on four major user tasks to build our prototypes. These user tasks came from our hierarchical task inventory. We focused on user interacting with the main features of the applications. These four major user tasks are using the following features of the application: “Schedule”, “Trip Planner”, “Ticketing”, and “Next Departure”.</p>
+     <h4 class="w3-center">Schedule</h4>
+    <img src="capmetro/lowfi1.png" alt="lowfi" width="700" style="margin-left: -15px">    
+    <img src="capmetro/lowfi1-2.png" alt="lowfi" width="225">
+    <p>In order to view the schedule, the user first selects the schedule feature on the main menu bar. Then, user selects a type of service (Figure 1 - Schedule Home), enter the bus information by number or name such as “Downtown Austin” or “Lake Austin” (Figure 2 - Select route), and the date of service (Figure 3). Then, user views the schedule for that particular transit service by time and/or location (stop location) in a drop down menu. The estimated number of minutes for the bus to arrive at the stop location (Figure 4 - View Schedule) will be displayed. </p>
+
+    <h4 class="w3-center">Trip Planner</h4>
+    <img src="capmetro/lowfi2.png" alt="lowfi" width="700" style="margin-left: 100px;">
+    <p>To plan their trip, the user will need to enter both a starting and ending location (Figure 5). then the screen will display details related to the current trip (Figure 6), this includes a map of the route and a step-by-step guide. Both secondary-screens can be clicked on to expand their screen-size. Within the step-by-step guide, text descriptions of each event will include a clickable icon that will allow further details about the trip to be accessed by the user.</p>
+
+    <h4 class="w3-center">Ticketing</h4>
+    <img src="capmetro/lowfi3.png" alt="lowfi" width="700" style="margin-left: 100px;">
+    <p>To buy tickets and use tickets, the user needs to go to the tickets homepage (Figure 8). If they are not logged-in and want to proceed, there will be a pop-up message to ask them either sign up for an account to sign in (Figure 9). After the user go through the sign up/in process (Figure 10, Figure 11), they can click the right-arrow icon  to view different ticket packages (Figure 12) to choose the most appropriate one to add to the shopping cart. </p>
+    <img src="capmetro/lowfi4.png" alt="lowfi" width="700" style="margin-left: 100px;">    
+    <img src="capmetro/lowfi5.png" alt="lowfi" width="700" style="margin-left: 100px;">
+    <p>Then the user needs to enter credit/debit card information (Figure 13) to add a new card by clicking the plus icon. The user can enter the card number either manually or just use the camera icon  to scan the card. If the user successfully scan the card number, he/she will hear the crack of camera and the card number will automatically appear in the entry box.  The user also needs to add a billing address for the card (Figure 14). After they add a card in their account, they can checkout and they will get a message if they successfully purchase tickets (Figure 15). Then the user can use the tickets purchased to scan the barcode (Figure 16) when they board the bus.</p>
+
+    <h4 class="w3-center">Next Departure</h4>
+    <img src="capmetro/lowfi6.png" alt="lowfi" width="700" style="margin-left: 100px;">
+    <img src="capmetro/lowfi7.png" alt="lowfi" width="700" style="margin-left: 100px;">
+    <p>In the homepage, user can add a shortcut to quickly access the next departure time by choosing stop id and route number. To find the next departure times, the user first selects the next departure feature on the main menu bar at the bottom of the home screen with the bus symbol . Then the user will get into the main page of next departure (Figure 17). The user can choose to select the bus stop on the map (Figure 18), which is indicated by a bus with a circle . If the bus stop is selected, the icon will turn red . Or the user can choose to input the bus stop name manually (Figure 19), and the system will automatically detect a list of names of possible bus stops. After the user has chosen the bus stop, the user can touch the checkmark  to confirm his or her selection, and the list of next departure time will show up (Figure 20).</p>
+  </div>
+  <div class="w3-content w3-container w3-padding-32">
+    <h3 class="w3-center">PILOT TEST</h3>
+    <p>After we built our prototype, we took a careful review on every page first to make sure the links and interactions work well. Then we recruited a participant that resembled the characteristics of our primary persona.</p>
+    <p>The test took about 10-12 minutes. As the participant was looking at the screen interacting with the application, team member took notes on their responses to the questions as well as their general behaviors. During the 5 minute free interaction part of the test, one difficulty that user had was figuring out what each symbol on the main menu meant (what feature is represented by each symbol). The picture symbols did not seem intuitive for user to figure out what features they represented so the participant asked during the pilot testing where she needs to go to plan out a trip to go somewhere. She clicked on a few options before finding the next departure feature on the homepage main menu.</p> 
+<P>After interacting with the application for five minutes, the user was able to identify the main features that were made available through the application and was able to complete the tasks asked of her during testing and gave feedback based on her experience with the application depending on the prompting questions that were asked. 
+</p>
+<h3 class="w3-center">HEURISTIC EVALUATION</h3>
+<P>Our prototype was evaluated by another group of designers and here is a list of findings from their evaluations.</P>
+<li>The search bar in the home screen does not display a clear purpose, user may not know exactly what to use it for </li>
+<li>Main menu has icons that are not intuitive for user to know what functions they offer</li>
+<li>When selecting a service option under “schedule,” only the arrow is clickable to go to the next screen, which makes it hard to user to figure out how to get to the next screen so better to make the whole service option clickable including the picture icon and text label.</li>
+<li>It was difficult to figure out how to make a purchase (make a payment) for a ticket. There seems to be no “submit” or “buy” button to make a final purchase.</li>
+<li>Under “trip planner” and “next departure,” the stop ID is presented for the destination (stop location) but there seems to be no need for that as user may not even be sure of what that means. What is more important to include would be the bus number and street names.</li>
+<li>After viewing “schedule,” it would be nice to have an option to save a viewed schedule so user can refer back to it again in the future if it is a bus that he/she takes frequently.</li>
+<li>Under “schedule,” consider another way to display the bus departure times instead of a drop down menu (drop down menu seems to suggest that the user needs to select an option).</li>
+<li>It was hard to find the “trip planner” feature which is currently placed in the hamburger menu on the top left side so need to make “trip planner” more evident and easy to find for user.</li>
+<li>User may not be sure of the difference in functionality for “trip planner” and “next departure” as they seem to overlap in some functionalities. </li>
+<li>The functionality of each feature on the main menu is not clear as the picture symbols are not intuitive for user to know what they offer. </li>
+  </div>
+  <div class="w3-container w3-content">
+    <h3 class="w3-center">HIGH FIDELITY PROTOTYPE</h3>
+    <p>After discussing about the pilot test result and the recommendations we got from the heuristic evaluation, we decided to made some changes to our prototype. Below are a few examples of direction to be taken on redesigns of the application.</p>
+    <div class="w3-col m6 w3-center">
+      <img src="capmetro/mediumfi1.png" alt="mediumfi" width="300">
+      <p> Previous Homepage</p>
+    </div>
+    <div class="w3-col m6 w3-center">
+      <img src="capmetro/iPhone 6-7-8 – 5.png" alt="mediumfi" width="300">
+      <p> Redesign 1: Homepage with clear labels, locations of stops and improved cognitive affordance.</p>
+    </div>
+    <div class="w3-padding-32 w3-center"><p>__________</p></div>
+
+    <div class="w3-col m6 w3-center">
+      <img src="capmetro/mediumfi2.png" alt="mediumfi" width="300">
+      <p>Previous Schedule Page</p>
+    </div>
+    <div class="w3-col m6 w3-center">
+      <img src="capmetro/iPhone 6-7-8 – 6.png" alt="mediumfi" width="300">
+      <p> Redesign 2: Schedule page with the nearest multipal bus lines approaching the current stop.</p>
+    </div>
+    <div class="w3-padding-32 w3-center"><p>__________</p></div>
+
+    <div class="w3-col m6 w3-center">
+      <img src="capmetro/mediumfi3.png" alt="mediumfi" width="300">
+      <p>Previous Next Departure Page</p>
+    </div>
+    <div class="w3-col m6 w3-center">
+      <img src="capmetro/iPhone 6-7-8 – 2.png" alt="mediumfi" width="280">
+      <p> Redesign 3: Next departure page with a intuitive timeline displaying the time and location for a bus</p>
+    </div>
+    <div class="w3-padding-32 w3-center"><p>__________</p></div>
+
+    <div class="w3-col m4 w3-center">
+      <img src="capmetro/Trip Planner (1).png" alt="mediumfi" width="300">
+      <p>Previous Use Tickets Page</p>
+    </div>
+    <div class="w3-col m8 w3-center">
+      <img src="capmetro/iPhone 6-7-8 – 10.png" alt="mediumfi" width="290">
+      <img src="capmetro/iPhone 6-7-8 – 12.png" alt="mediumfi" width="290">
+      <p> Redesign 4: Users can be alerted after geting on the bus.</p>
+    </div>
+    <div class="w3-padding-32 w3-center"><p>__________</p></div>
+
+      <div class="w3-col m4 w3-center">
+      <img src="capmetro/mediumfi4.png" alt="mediumfi" width="297">
+      <p>Previous Ticketing Page</p>
+    </div>
+    <div class="w3-col m8 w3-center">
+      <img src="capmetro/iPhone 6-7-8 – 13.png" alt="mediumfi" width="300">
+      <img src="capmetro/iPhone 6-7-8 – 3.png" alt="mediumfi" width="300">
+      <p> Redesign 5: Ticketing page with a more clear layout and call to action buttons.</p>
+    </div>
+    <div class="w3-padding-32 w3-center"><p>__________</p></div>
+
+     <div class="w3-col m4 w3-center">
+      <img src="capmetro/mediumfi5.png" alt="mediumfi" width="300">
+      <p>Previous Use Tickets Page</p>
+    </div>
+    <div class="w3-col m8 w3-center">
+      <img src="capmetro/iPhone 6-7-8 – 7.png" alt="mediumfi" width="300">
+      <img src="capmetro/iPhone 6-7-8 – 8.png" alt="mediumfi" width="302">
+      <p> Redesign 6: Added a screen with a list of bought tickets.</p>
+    </div>
+    <div class="w3-padding-32 w3-center"><p>__________</p></div>
+  </div>
+    <h4 class="w3-center">Try it!</h4>
+  <div class="w3-center mockup w3-padding-64">
+  <iframe width="377" height="667" src="https://xd.adobe.com/embed/77eaddf5-5df1-4a9e-9b7f-ecd780ee2ed0" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+</div>
+
+
+
+
+
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">MY WORK</h3>
+  <p class="w3-center"><em>Here are some of my latest work.<br> Click on the images to check out.</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="pictures/chewy final ppt (1)-01.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Can't show">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="pictures/hifi.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="pictures/austin.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="pictures/IIIMPACT.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="pictures/io.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="pictures/tenantdipute.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="pictures/lyrica.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="pictures/IMG_0143 - Copy.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Animations">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
