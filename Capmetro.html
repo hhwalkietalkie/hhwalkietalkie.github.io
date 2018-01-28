@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>CAPMETRO</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -20,28 +20,23 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 a{
   text-decoration: none;
 }
-
 /* First image (Logo. Full height) */
 .bgimg-1 {
     background-image: url('capmetro/bus-1868507 (1).jpg');
     min-height: 100%;
 }
-
 /* Second image (Portfolio) */
 .bgimg-2 {
-    background-image: url("capmetro/prototype.jpg");
+    background-image: url("capmetro/Slide1.JPG");
     min-height: 400px;
 }
-
 .bgimg-4 {
     background-image: url("capmetro/CONTEXTUAL.png");
     min-height: 400px;
 }
-
 /* Third image (Contact) */
 .bgimg-3 {
     background-image: url("capmetro/work.jpg");
@@ -54,7 +49,6 @@ a{
 }
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
-
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
@@ -99,8 +93,8 @@ through reinventing the experience of user’s interaction with the application<
 by providing a fast, accurate, convenient, and reliable service experience</h4>
   </div>
   <div style="position: relative;">
-    <img style="position:absolute; right: 350px; top: 200px; z-index:1;" width="250" src="chewy/Untitled-1.png" />
-    <img style="position:absolute; right: 364px; top: 263px;  z-index:2" width="220" src="capmetro/iPhone 6-7-8 – 5.png" />
+    <img style="position:absolute; left: 950px; top: 130px; z-index:1;" width="250" src="chewy/Untitled-1.png" />
+    <img style="position:absolute; left: 964px; top: 193px;  z-index:2" width="220" src="capmetro/iPhone 6-7-8 – 5.png" />
   </div>
 </div>
 
@@ -423,11 +417,9 @@ The current issues that we are aiming to solve are based on our interpretation o
 <script>
 var slideIndex = 1;
 showDivs(slideIndex);
-
 function plusDivs(n) {
   showDivs(slideIndex += n);
 }
-
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
@@ -450,13 +442,11 @@ function myMap()
     mapTypeId:google.maps.MapTypeId.ROADMAP
   };
   var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
   var marker = new google.maps.Marker({
     position: myCenter,
   });
   marker.setMap(map);
 }
-
 // Modal Image Gallery
 function onClick(element) {
   document.getElementById("img01").src = element.src;
@@ -464,7 +454,6 @@ function onClick(element) {
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
-
 // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
 function myFunction() {
@@ -475,7 +464,6 @@ function myFunction() {
         navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
     }
 }
-
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
     var x = document.getElementById("navDemo");

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>UTIO</title>
+<title>Tenant Dispute</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -27,7 +27,7 @@ a{
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('utio/UT_Austin_640x320.jpg');
+    background-image: url('tenant/WeChat Screenshot_20180127225550.png');
     min-height: 100%;
 }
 
@@ -36,7 +36,9 @@ a{
     background-image: url("chewy/hifi.jpg");
     min-height: 400px;
 }
-
+h4{
+  color: #8b0000;
+}
 /* Third image (Contact) */
 .bgimg-3 {
     background-image: url("utio/findings.png");
@@ -53,11 +55,11 @@ a{
     }
 }
 .rotateimg90 {
-  -webkit-transform:rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
+  -webkit-transform:rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  transform: rotate(15deg);
 }
 .mockup{
   background-image: url('chewy/Untitled-1.png');
@@ -93,102 +95,74 @@ a{
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container" id="home">
-  <div class="w3-display-left" style="margin-left: 350px;">    
-  <img src="utio/u90.png" width="400">
-  <h4 style="color: white">Website Redesign of UT International Office.</h4>
+  <div class="w3-display-left" style="margin-left: 300px;">  
+  	<h2 style="color: white"><b>TenantDispute</b></h2>
+  <h4 style="color: black"><b>A place to report and find out how to handle <br>the landlord or tenant problems.</b></h4>
   </div>
   <div style="position: relative;">
-    <img style="position:absolute; left: 750px; top: 200px; z-index:1;" width="500" src="utio/laptop-mockup.png" />
-    <img style="position:absolute; left: 810px; top: 216px;  z-index:2" width="380" src="utio/WeChat Screenshot_20180122014517.png" />
+    <img class="rotateimg90" style="position:absolute; left: 1310px; top: -200px;  z-index:2" width="380" src="tenant/badtenant.jpg"/>
+    <img class="rotateimg90" style="position:absolute; left: 910px; top: 196px;  z-index:2" width="380" src="tenant/images.jpg"/>
+    <img class="rotateimg90" style="position:absolute; left: 1010px; top: 416px;  z-index:2" width="600" src="tenant/LOT_BEHIND_APARTMENT_HOUSE_AT_LEXINGTON_AVENUE_AND_105TH_STREET_IS_STREWN_WITH_ASSORTED_TRASH_-_NARA_-_549788.jpg"/>
   </div>
 </div>
 
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="CONCEPT">
-  <h3 class="w3-center">CONCEPT</h3>
-  <p>In the course Design Thinking, our class worked as a team to help the international office of UT-Austin redesign their website. Our goal was to strengthen brand recognition, improve its information architecture and enhance the user experience. The ideal product would be responsive, and we designed for self-service to allow users to perform tasks without external assistance. We also attempted to increase engagement by adding desirable features.</p>
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center">UNDERSTAND</h3>
+  <h4>Target User:</h4>
+  <p>1. Tenants<br>2. Landlords</p>
+  <h4>Goals:</h4>
+  <p>Provide a vent for tenants and landlord to complaint about bad customers.<br>Provide a place for tenants and landlord to communicate and find out how to handle problems about their customers.<br>Provide authoritative resource for tenants and landlords to take a reference and will not fall victim to the same person.</p>
+<h4>Problems:</h4>
+<p>What information need to be displayed?<br>What service should be provided?<br>How to make users trust this website?<br>What prompts would it give?</p>
+
+</div>
+<div class="bgimg-1">
+  <div class="w3-content w3-container w3-padding-32">
+  <h3 class="w3-center" style="color: white">MIND MAPPING</h3>
+  <img src="tenant/WeChat Screenshot_20180127232733.png" width="500">
+  <img src="tenant/WeChat Screenshot_20180127232746.png" width="1000">
+  <img src="tenant/WeChat Screenshot_20180127232755.png" width="1000">
+</div>
 </div>
 
-<div class="w3-content w3-container w3-padding-64" id="PROCESS">
-  <h3 class="w3-center">PROJECT GOALS</h3>
-  <img src="utio/process.png" class="w3-round w3-image" alt="Process" width="1200" height="333">
+<div class="w3-content w3-container w3-padding-32 w3-center">
+  <h3>COMPETITIVE ANALYSIS</h3>
+  <img src="tenant/113279_24192390b35a4190838d079d4d592837_mv2.png" width="900">
 </div>
 
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-black w3-wide">FINDINGS</span>
+<div class="w3-content w3-container w3-padding-32">
+  <h3 class="w3-center">USER FLOW</h3>
+</div>
+<div class="w3-center">  <img src="tenant/userflow.png" width="100%"></div>
+
+<div class="w3-content w3-container w3-padding-32">
+  <h3 class="w3-center">WIREFRAMES</h3>
+</div>
+<div class="w3-center">  <img src="tenant/wireframes.png" width="100%"></div>
+
+<div class="w3-content">
+  <div class="w3-col m8 w3-padding-32">
+    <img src="tenant/20171003000900.png" width="90%">
+    <img src="tenant/_20171003000956.png" width="90%">
+    <img src="tenant/_20171003001029.png" width="90%">
+    <img src="tenant/_20171003001101.png" width="90%">
+  </div>
+  <div class="w3-col m4 w3-padding-32">
+    <h3>PROTOTYPE</h3>
+    <h4>Design Highlights:</h4>
+    <p>On the first part of the page, directly ask users about their problems;
+<br><br><br><br><br>
+Give examples of what others are posting about. Remind users if they have the same problem;
+<br><br><br><br><br><br><br>
+Describe what they can do in this website to solve their landlord/tenant problem;
+<br><br><br><br><br><br><br><br>
+Remind users to select their identity when visit the site in order to see more adaptive content;
+<br><br><br><br><br>
+User tutorial as well as prompt for users to register;</p>
+<h4>Mock ups</h4>
+<p>https://invis.io/WFDSBK97S#/256567060_Screen_-7-</p>
   </div>
 </div>
-
-<div class="w3-container w3-content w3-center w3-padding-64">
-	<h3>RESEARCH PHASE 1</h3>
-</div>
-
-<div class="w3-row-padding w3-center">
-    <div class="w3-col m4">
-      <a href="https://docs.google.com/presentation/d/1kdnyCp7nZCl82fFpHvowIdFp2XdSDy2_pi6quMBvLgw/edit#slide=id.g109729d0b2_2_183"><img src="utio/imagen-web-optimization-digisolution-1024x637.png" style="width:80%" alt="web analytics"></a>
-      <p>Web Analytics</p>
-    </div>
-
-    <div class="w3-col m4">
-      <a href="https://docs.google.com/presentation/d/1xwmc7-OkNpb-RLilEm5kwSQR7uTQO0LH3ijv4bQVr-g/edit#slide=id.p"><img src="utio/546776-636288808491358433-16x9.jpg" style="width:80%" alt="Tree test"></a>
-      <p>Tree Test</p>
-    </div>
-
-    <div class="w3-col m4">
-      <a href="https://docs.google.com/presentation/d/17BW8-94cL_wOwAJDAYJ-W1HJAixfnk_cEOcKF8o_xsY/edit#slide=id.p"><img src="utio/guide-heuristic-evaluation.jpg" style="width:80%" alt="Heuristic Evaluation"></a>
-      <p>Heuristic Evaluation</p>
-    </div>
-  </div>
-
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m4">
-      <a href="https://docs.google.com/presentation/d/1kEgG_cbxVsv4XaiFcp9shJt-DZ-VeLJzFeUkz5Qa3L4/edit#slide=id.p"><img src="utio/info_whyTakeOnlineSurveys.png" style="width:80%" alt="Student Survey"></a>
-      <p>Student Survey</p>
-    </div>
-
-    <div class="w3-col m4">
-      <a href="https://docs.google.com/presentation/d/1JJf05pJPR5znCyExRLFtCso7445o5qpIC7f0YB1Mo1k/edit#slide=id.p"><img src="utio/1.png" style="width:80%;" alt="Competitive Analysis"></a>
-      <p>Competitive Analysis</p>
-    </div>
-
-    <div class="w3-col m4">
-      <a href="https://docs.google.com/presentation/d/1nzApJlOlU_UeU7o99cMseFllNptzB_dgfglOyUh9qQk/edit#slide=id.p"><img src="utio/1434598832262.jpg" style="width:80%" alt="Advisory Survey"></a>
-      <p>Advisory Survey</p>
-    </div>
-  </div>
-
-<div class="w3-content w3-container w3-padding-64" id="COMPETETIVE">
-  <h3 class="w3-center">DESIGN PHASE 1</h3>
-  <p>We reviewed the findings in Research Phase One and provided two versions of IA redesign (used-based and task-based). The research team would go through further usability testing on these two alternatives for comparison in efficiency.</p>
-  <div class="w3-center w3-padding-64">
-  <h4>User Based</h4>
-  <img src="utio/User based.png" width="100%">
-  <h4>Task Based</h4>
-  <img src="utio/Task based.png" width="100%"></div>
-
-  <p>Our team created low fidelity wireframes for two versions of IA. The one to the left is the IA version I created in Balsamiq. We compared our designs and discussed together the best way to finalize the output.</p>
-<div class="w3-center">
-  <img src="utio/s.png">
-</div>
-  </div>
-
- <div class="w3-content w3-container w3-padding-32">
- 	<h3 class="w3-center">RESEARCH PHASE 2</h3>
- 	<h4>User-based or Task-based?</h4>
- 	<p>The usability team conducted the tree test again on the two versions of IA (task-based & user-based), using the same tasks designed in Research phase 1 that tested the draft International Office provided. It turns out that:</p>
- 	<li>User-based IA : 30% increase in SUCCESS, 14% increase in DIRECTNESS; </li>
- 	<li>Task-based IA : 17% increase in SUCCESS, 4% increase in DIRECTNESS.   (compared to the draft)</li>
- 	<h3 class="w3-center w3-padding-32">User-based wins!</h3>
- </div>
-
-<div class="w3-container w3-content w3-padding-32">
-	<h3 class="w3-center">DESIGN PHASE 2</h3>
-	<p>My team was responsible for the design of the International Office homepage, and other class groups were redesigning the unit landing pages.</p>
-	<img src="utio/c6fc2e_411d855deec44aed874104bbbedf8132-mv2_d_1336_2218_s_2.png" width="100%">
-</div>
-
-
 
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
@@ -303,6 +277,22 @@ function toggleFunction() {
     } else {
         x.className = x.className.replace(" w3-show", "");
     }
+}
+</script>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 9000);    
 }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
