@@ -12,7 +12,11 @@
 
       <link rel="stylesheet" href="css/style.css">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Sacramento", sans-serif;}
+body {
+  font-size: 100%;
+  font-family: 'Muli', sans-serif;
+  color: #6c6753;
+}
 body, html {
     height: 100%;
     color: #777;
@@ -73,60 +77,68 @@ a{
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i>
-    </a>
+  <header class="header container-fluid">
+  <div class="nav-toggle-wrapper">
+    <button class="nav-toggle-btn">
+                <span class="line"></span>
+            </button>
   </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
-  </div>
-</div>
+  <nav class="header__nav">
+    <ul class="nav">
+      <li class="header__nav__item"><a href="index.html#about" data-ref="about">home</a></li>
+    </ul>
+  </nav>
+  <ul class="header__social-btns">
+    <li>
+      <a class="fa fa-vimeo" href="https://vimeo.com/user73078946"></a>
+    </li>
+    <li>
+      <a class="fa fa-github" href="https://github.com/hhwalkietalkie" target="_blank"></a>
+    </li>
+    <li>
+      <a class="fa fa-facebook" href="https://www.facebook.com/profile.php?id=100013059883523" target="_blank"></a>
+    </li>
+    <li>
+      <a class="fa fa-linkedin" href="https://www.linkedin.com/in/han-han/" target="_blank"></a>
+    </li>
+  </ul>
+</header>
 
 <!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container" id="home">
-  <div class="w3-display-left" style="margin-left: 300px;">  
-  	<h3 style="color: #ffa549"><b>Captions in Pharmaceutical <br>Commercials:</b></h3>
-  <h4 style="color: black">The effect of video captions on viewers <br>attention and understanding of technical content</h4>
-  </div>
-  <div style="position: relative;">
-    <img style="position:absolute; left: 750px; top: 200px; z-index:1;" width="500" src="utio/laptop-mockup.png" />
-    <img style="position:absolute; left: 810px; top: 216px;  z-index:2" width="380" src="hci/WeChat Screenshot_20180127212934.png" />
-  </div>
+<div class="w3-container w3-content w3-center w3-padding-64">
+  <h1 style="color: #bf5700">Captions in Pharmaceutical Commercials:</h1>
+  <h2>The effect of video captions on viewers attention and understanding of technical content</h2>
 </div>
+
 <div class="w3-content w3-padding-64">
 <div class="w3-col m3 w3-center">
-	<p>Jacek Gwizdka</p>
-	<p>jacekg@ischool.utexas.edu</p>
+  <p>Jacek Gwizdka</p>
+  <p>jacekg@ischool.utexas.edu</p>
 </div>
 <div class="w3-col m3 w3-center">
-	<p>Caroline O’Meara</p><p>caroline.omeara@utexas.edu</p>
+  <p>Caroline O’Meara</p><p>caroline.omeara@utexas.edu</p>
 </div>
 <div class="w3-col m3 w3-center">
-	<p>Han Han</p> <p>han_han@utexas.edu</p>
+  <p>Han Han</p> <p>han_han@utexas.edu</p>
 </div>
 <div class="w3-col m3 w3-center">
-	<p>Whitney Pittard</p><p>whp10a@acu.edu</p>
+  <p>Whitney Pittard</p><p>whp10a@acu.edu</p>
 </div></div>
-<div class="w3-content w3-padding-64">
-	<h3 class="w3-center">INTRODUCTION</h3>
-	<p>Closed captions are frequently included in videos, including commercials. This project combines eye-tracking technology and survey research to study how captions might affect viewers’ attention and affect their experience of watching commercials. The study focuses on medical commercials where viewers are exposed to the technical content. The subjects watched commercials with and without captions. We evaluated their attention with eye-tracking equipment and their retention and experience with questionnaires. Studying attention, retention, and experience in commercials is important for analyzing the value of a brand’s advertisement when reaching a target market. Since commercials are expensive and time-consuming for a brand to develop and launch, an advertisement should be compelling and effective.</p>
+
+<div class="w3-content w3-padding-32">
+<div class="w3-col m8">
+  <h3>INTRODUCTION</h3>
+  <P>Closed captions are frequently included in videos, including commercials. This project combines eye-tracking technology and survey research to study how captions might affect viewers’ attention and affect their experience of watching commercials. The study focuses on medical commercials where viewers are exposed to the technical content. The subjects watched commercials with and without captions. We evaluated their attention with eye-tracking equipment and their retention and experience with questionnaires. Studying attention, retention, and experience in commercials is important for analyzing the value of a brand’s advertisement when reaching a target market. Since commercials are expensive and time-consuming for a brand to develop and launch, an advertisement should be compelling and effective.</P>
 </div>
-<div class="w3-content w3-padding-64">
-	<h3 class="w3-center">RESEARCH QUESTIONS</h3>
+<DIV class="w3-col m4 w3-center">
+  <img src="pictures/hci1.png" width="500">
+</DIV>
+</div>
+
+
+<div class="w3-content w3-padding-32">
+  <div class="w3-padding-16">
+  <h3 class="w3-center">RESEARCH QUESTIONS</h3></div>
 	<h4>RQ1</h4>
 	<P>Do subtitles effect audience attention with pharmaceutical commercials containing technical content?</P>
 	<h4>RQ2</h4>
@@ -137,8 +149,9 @@ a{
 	<p>Do captions effect the experience of watching commercials with technical content?</p>
 </div>
 
-<div class="w3-container w3-content w3-padding-64">
-	<h3 class="w3-center">METHODOLOGY</h3>
+<div class="w3-container w3-content w3-padding-32">
+  <div class="w3-padding-16">
+  <h3 class="w3-center">METHODOLOGY</h3></div>
 	<li>Eye-tracking using Tobii 300 eye-tracker and iMotions Attention Tool software</li>
     <li>Qualtrics questionnaires after each video and an additional one at the end of the session</li>
     <li>Qualtrics questionnaires three weeks later using join.me or in-person screen sharing</li>
@@ -148,7 +161,7 @@ a{
 9 participated in follow-up<br>
 Average age of 28<br>
 7 women and 5 men<br>
-Most with a four-year degree</p>
+Most with a four-year degree</p><br>
 <h4>Procedure</h4>
 <p>IRB approval<br>
 Within-subject design<br>
@@ -167,39 +180,41 @@ Remote screen-sharing</p>
 	<h3 class="w3-center w3-padding-32">RESULTS</h3>
 	<div class="w3-col m6">
 		<img src="hci/Percentage of subjects who correctly identified what symptoms are treated by the drugs in the commercial..png" width="100%">
-		<p>Percentage of subjects who correctly identified what symptoms are treated by the drugs in the commercial.</p>
+    <div class="w3-padding-16">
+    <p>Percentage of subjects who correctly identified what symptoms are treated by the drugs in the commercial.</p></div>
 	</div>
 	<div class="w3-col m6">
 		<img src="hci/Percentage of subjects who correctly identified the warnings in the commercials they just watched..png" width="100%">
-		<p>Percentage of subjects who correctly identified the warnings in the commercials they just watched.</p>
+    <div class="w3-padding-16">
+    <p>Percentage of subjects who correctly identified the warnings in the commercials they just watched.</p></div>
 	</div>
 </div>
 <div class="w3-container w3-content w3-padding-32">
 	<div class="w3-col m4">
 		<img src="hci/Participants’_mental_demand_rating_from_very_low_to_very_high_for_videos_without_and_with_captions.png" width="100%">
-		<p>Participants’ mental demand rating from very low to very high for videos without and with captions</p>
+		<div class="w3-padding-16"><p>Participants’ mental demand rating from very low to very high for videos without and with captions</p></div>
 	</div>
 	<div class="w3-col m4">
 		<img src="hci/Participants’_overall_reaction_rating_from_terrible_to_wonderful_for_videos_without_and_with_captions..png" width="100%">
-		<p>Participants’ overall reaction rating from terrible to wonderful for videos without and with captions.</p>
+		<div class="w3-padding-16"><p>Participants’ overall reaction rating from terrible to wonderful for videos without and with captions.</p></div>
 	</div>
 	<div class="w3-col m4">
 		<img src="hci/Participants’_rated_feeling_rushed_or_hurried_from_very_low_to_very_high_for_videos_without_and_with_captions..png" width="100%">
-		<p>Participants’ rated feeling rushed or hurried from very low to very high for videos without and with captions.</p>
+		<div class="w3-padding-16"><p>Participants’ rated feeling rushed or hurried from very low to very high for videos without and with captions.</p></div>
 	</div>
 </div>
 <div class="w3-container w3-content w3-padding-32">
 	<div class="w3-col m4">
 		<img src="hci/Participants’_overall_reaction_rating_from_dull_to_stimulating_for_videos_without_and_with_captions..png" width="100%">
-		<p>Participants’ overall reaction rating from dull to stimulating for videos without and with captions.</p>
+		<div class="w3-padding-16"><p>Participants’ overall reaction rating from dull to stimulating for videos without and with captions.</p></div>
 	</div>
 	<div class="w3-col m4">
 		<img src="hci/Participants’_frustration_rating_from_very_low_to_very_high_for_videos_without_and_with_captions..png" width="100%">
-		<p>Participants’ overall reaction rating from frustrating to satisfying for videos without and with captions.</p>
+		<div class="w3-padding-16"><p>Participants’ overall reaction rating from frustrating to satisfying for videos without and with captions.</p></div>
 	</div>
 	<div class="w3-col m4">
 		<img src="hci/Participants’_overall_reaction_rating_from_frustrating_to_satisfying_for_videos_without_and_with_captions..png" width="100%">
-		<p>Participants’ overall reaction rating from frustrating to satisfying for videos without and with captions.</p>
+		<div class="w3-padding-16"><p>Participants’ overall reaction rating from frustrating to satisfying for videos without and with captions.</p></div>
 	</div>
 	</div>
 
@@ -210,15 +225,15 @@ Remote screen-sharing</p>
 	<div class="w3-content w3-padding-32">
 	<div class="w3-col m6">
 		<img src="hci/Percent of time spent in dynamic AOIs for the captioned video for Pristiq..png" width="100%">
-		<p>Percent of time spent in dynamic AOIs for the captioned video for Pristiq.</p>
+		<div class="w3-padding-16"><p>Percent of time spent in dynamic AOIs for the captioned video for Pristiq.</p></div>
 	</div>
 	<div class="w3-col m6">
 		<img src="hci/Percent of time spent in dynamic AOIs for the captioned video for Requip..png" width="100%">
-		<p>Percent of time spent in dynamic AOIs for the captioned video for Requip.</p>
+		<div class="w3-padding-16"><p>Percent of time spent in dynamic AOIs for the captioned video for Requip.</p></div>
 	</div>
 </div>
 <div class="w3-container w3-content w3-padding-32">
-	<h3 class="w3-center">FINDINGS</h3>
+	<h3 class="w3-center w3-padding-16">FINDINGS</h3>
 	<li>Participants consistently had a more positive experience watching the videos with captions and felt more comfortable with the content.</li>
     <li>Users retained information from both captioned and non-captioned videos when asked about them three-weeks later.</li>
     <li>Participants looked at the captions the most when the commercials discussed side effects and the least during the technical discussion of chemical compounds.</li>
@@ -226,13 +241,13 @@ Remote screen-sharing</p>
 </div>
 
 <div class="w3-container w3-content w3-padding-32">
-	<h3>LESSONS LEARNED</h3>
+	<h3 class="w3-center w3-padding-16">LESSONS LEARNED</h3>
 	<li>While we didn’t want to tire our users out with a long questionnaire, more questions at the end of the session would have revealed more about what they retained.</li>
     <li>Three of the four commercials featured women, and the majority of our subjects were women, this may have skewed the results. We chose gender-neutral products, but future studies could look for more gender-neutral advertisements or balance the gender of the featured patients more evenly.</li>
 </div>
 
 <div class="w3-container w3-content w3-padding-32">
-	<h3>RECOMMENDATIONS</h3>
+	<h3 class="w3-center w3-padding-16">RECOMMENDATIONS</h3>
 	<li> The captions increased viewers’ positive experience of the commercials. This creates a positive outcome for advertisers and might increase the amount of information retained. Therefore, adding captions to pharmaceutical commercials would be a low-cost way to increase the commercials’ effectiveness.</li>
     <li>The focus on subtitles was greater when the text related to personal well being, like side effects. Pharmaceutical commercials should try to make content as related as possible to attract greater attention to the product and prevent consumers from getting lost in technical jargon.</li>
 </div>
@@ -296,7 +311,7 @@ function carousel() {
     setTimeout(carousel, 9000);    
 }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+    <script  src="js/index.js"></script>
 <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp

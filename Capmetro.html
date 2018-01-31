@@ -13,7 +13,11 @@
 
       <link rel="stylesheet" href="css/style.css">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Sacramento", sans-serif;}
+body {
+  font-size: 100%;
+  font-family: 'Muli', sans-serif;
+  color: #6c6753;
+}
 body, html {
     height: 100%;
     color: #777;
@@ -36,7 +40,7 @@ a{
 }
 /* Second image (Portfolio) */
 .bgimg-2 {
-    background-image: url("capmetro/Slide1.JPG");
+    background-image: url("capmetro/prototype.jpg");
     min-height: 400px;
 }
 .bgimg-4 {
@@ -65,28 +69,32 @@ a{
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i>
-    </a>
+  <header class="header container-fluid">
+  <div class="nav-toggle-wrapper">
+    <button class="nav-toggle-btn">
+                <span class="line"></span>
+            </button>
   </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
-  </div>
-</div>
+  <nav class="header__nav">
+    <ul class="nav">
+      <li class="header__nav__item"><a href="index.html#about" data-ref="about">home</a></li>
+    </ul>
+  </nav>
+  <ul class="header__social-btns">
+    <li>
+      <a class="fa fa-vimeo" href="https://vimeo.com/user73078946"></a>
+    </li>
+    <li>
+      <a class="fa fa-github" href="https://github.com/hhwalkietalkie" target="_blank"></a>
+    </li>
+    <li>
+      <a class="fa fa-facebook" href="https://www.facebook.com/profile.php?id=100013059883523" target="_blank"></a>
+    </li>
+    <li>
+      <a class="fa fa-linkedin" href="https://www.linkedin.com/in/han-han/" target="_blank"></a>
+    </li>
+  </ul>
+</header>
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container" id="home">
@@ -133,7 +141,7 @@ The current issues that we are aiming to solve are based on our interpretation o
 </div>
 
 <div class="w3-content w3-container w3-padding-64" id="COMPETETIVE">
-  <h3 class="w3-center">CONTEXUAL INQUIRY</h3>
+  <h3 class="w3-center w3-padding-32">CONTEXUAL INQUIRY</h3>
   <P>After we had familiarized ourselves with the application system and what user tasks are made possible through the system, we decided to gather user data through conducting interviews to learn about how actual users of the application respond and interact with the system to gain a good idea of thinking about the redesign of the system for users. These interviews allowed for observation of user behavior, what steps and routine users take to interact with the application and their attitude and feeling toward their usage of the system.</P>
   <div class="w3-col m4 w3-center w3-padding-large">
 <p><i class="fa fa-users w3-margin-right"></i>12 Paticipants</p>
@@ -157,7 +165,7 @@ The current issues that we are aiming to solve are based on our interpretation o
 </div>
 
   <div class="w3-content w3-container w3-padding-32" id="USER">
-  <h3 class="w3-center">AFFINITY DIAGRAM<br></h3>
+  <h3 class="w3-center w3-padding-32">AFFINITY DIAGRAM<br></h3>
   <p>The Work Activity Affinity Diagram (WAAD) was created as soon as we had completed the interviews.Then we took a close look into all the responses of each interviewee and created the activity notes based on what they had said. We had categorized the notes into clusters based on related themes that we identified from the interview data collected.</p>
 <p>We did a walkthrough of the Work Activity Affinity Diagram (WAAD) and extracted 14 representative work activity notes to develop requirements implied in the notes. </p>
   <div class="w3-col m9 w3-center w3-padding-large">
@@ -177,11 +185,8 @@ The current issues that we are aiming to solve are based on our interpretation o
 </div>
       
 <div class="w3-content w3-container w3-padding-64" id="USER2">
-    <h3 class="w3-center">INFORMING MODELS</h3>
-<div class="w3-container">
-  <h2>Slideshow Caption</h2>
-  <p>Add a caption text for each image slide with the w3-display-* classes (topleft, topmiddle, topright, bottomleft, bottommiddle, bottomright or middle).</p>
-</div>
+    <h3 class="w3-center w3-padding-32">INFORMING MODELS</h3>
+
 <div class="w3-content w3-display-container">
 <div class="w3-display-container mySlides">
   <img src="capmetro/USER MODEL.png" alt="user model" style="width:100%">
@@ -204,20 +209,20 @@ The current issues that we are aiming to solve are based on our interpretation o
 </div>
 
 <div class="w3-content w3-container w3-padding-64">
-   <h3 class="w3-center">PERSONA</h3>
+   <h3 class="w3-center w3-padding-32">PERSONA</h3>
    <img src="capmetro/PrimaryPersona.jpg" alt="persona" width="700" style="margin-left: 120px">
 </div>
 <div class="w3-content w3-container w3-padding-64">
-   <h3 class="w3-center">STODYBOARD</h3>
+   <h3 class="w3-center w3-padding-32">STODYBOARD</h3>
    <div class="w3-col m6 w3-padding-large">
-   <img src="capmetro/image1.jpg" alt="persona" width="500">
+   <img src="capmetro/image1.jpg" alt="persona" width="500" class="w3-padding-32">
    <li>Frame1: Kevin gets out from a bar in the evening, he cannot drive home.</li>
 <li>Frame2: He picks up his phone and gets in CapMetro and input his address. The bus information shows up and he finds that he can take route 100 to go home.</li>
 <li>Frame 3: When arriving at the bus stop, he finds that he doesn’t have enough money to buy a ticket, so he chooses to buy a ticket in CapMetro.</li>
 <li>Frame 4: After the bus arrives, Kevin shows the driver his ticket on his screen, and the driver let him get on the bus.</li>
  </div>
    <div class="w3-col m6 w3-padding-large">
-   <img src="capmetro/image2.jpg" alt="persona" width="500">
+   <img src="capmetro/image2.jpg" alt="persona" width="500" class="w3-padding-32">
    <li>Frame 1: Arora goes to the bus stop early, but she doesn’t bring her umbrella. isn’t worry about the bus will come because the alarm will ring when the bus comes.</li>
 <li>Frame 2: She picks up her phone and get in the CapMetro and finds out there is ten minutes left for the next bus to come. So she sets up an alarm. </li>
 <li>Frame 3: Arora goes back home to take her umbrella.</li>
@@ -232,36 +237,36 @@ The current issues that we are aiming to solve are based on our interpretation o
 </div>
 <div class="w3-content w3-container w3-padding-32">
   <div class="w3-content w3-container w3-padding-32">
-    <h3 class="w3-center">LOW FIDELITY PROTOTYPE</h3>
+    <h3 class="w3-center w3-padding-32">LOW FIDELITY PROTOTYPE</h3>
      <p>Our team decided to focus on four major user tasks to build our prototypes. These user tasks came from our hierarchical task inventory. We focused on user interacting with the main features of the applications. These four major user tasks are using the following features of the application: “Schedule”, “Trip Planner”, “Ticketing”, and “Next Departure”.</p>
-     <h4 class="w3-center">Schedule</h4>
+     <h4 class="w3-center w3-padding-16">Schedule</h4>
     <img src="capmetro/lowfi1.png" alt="lowfi" width="700" style="margin-left: -15px">    
     <img src="capmetro/lowfi1-2.png" alt="lowfi" width="225">
     <p>In order to view the schedule, the user first selects the schedule feature on the main menu bar. Then, user selects a type of service (Figure 1 - Schedule Home), enter the bus information by number or name such as “Downtown Austin” or “Lake Austin” (Figure 2 - Select route), and the date of service (Figure 3). Then, user views the schedule for that particular transit service by time and/or location (stop location) in a drop down menu. The estimated number of minutes for the bus to arrive at the stop location (Figure 4 - View Schedule) will be displayed. </p>
 
-    <h4 class="w3-center">Trip Planner</h4>
+    <h4 class="w3-center w3-padding-16">Trip Planner</h4>
     <img src="capmetro/lowfi2.png" alt="lowfi" width="700" style="margin-left: 100px;">
     <p>To plan their trip, the user will need to enter both a starting and ending location (Figure 5). then the screen will display details related to the current trip (Figure 6), this includes a map of the route and a step-by-step guide. Both secondary-screens can be clicked on to expand their screen-size. Within the step-by-step guide, text descriptions of each event will include a clickable icon that will allow further details about the trip to be accessed by the user.</p>
 
-    <h4 class="w3-center">Ticketing</h4>
+    <h4 class="w3-center w3-padding-16">Ticketing</h4>
     <img src="capmetro/lowfi3.png" alt="lowfi" width="700" style="margin-left: 100px;">
     <p>To buy tickets and use tickets, the user needs to go to the tickets homepage (Figure 8). If they are not logged-in and want to proceed, there will be a pop-up message to ask them either sign up for an account to sign in (Figure 9). After the user go through the sign up/in process (Figure 10, Figure 11), they can click the right-arrow icon  to view different ticket packages (Figure 12) to choose the most appropriate one to add to the shopping cart. </p>
     <img src="capmetro/lowfi4.png" alt="lowfi" width="700" style="margin-left: 100px;">    
     <img src="capmetro/lowfi5.png" alt="lowfi" width="700" style="margin-left: 100px;">
     <p>Then the user needs to enter credit/debit card information (Figure 13) to add a new card by clicking the plus icon. The user can enter the card number either manually or just use the camera icon  to scan the card. If the user successfully scan the card number, he/she will hear the crack of camera and the card number will automatically appear in the entry box.  The user also needs to add a billing address for the card (Figure 14). After they add a card in their account, they can checkout and they will get a message if they successfully purchase tickets (Figure 15). Then the user can use the tickets purchased to scan the barcode (Figure 16) when they board the bus.</p>
 
-    <h4 class="w3-center">Next Departure</h4>
+    <h4 class="w3-center w3-padding-16">Next Departure</h4>
     <img src="capmetro/lowfi6.png" alt="lowfi" width="700" style="margin-left: 100px;">
     <img src="capmetro/lowfi7.png" alt="lowfi" width="700" style="margin-left: 100px;">
     <p>In the homepage, user can add a shortcut to quickly access the next departure time by choosing stop id and route number. To find the next departure times, the user first selects the next departure feature on the main menu bar at the bottom of the home screen with the bus symbol . Then the user will get into the main page of next departure (Figure 17). The user can choose to select the bus stop on the map (Figure 18), which is indicated by a bus with a circle . If the bus stop is selected, the icon will turn red . Or the user can choose to input the bus stop name manually (Figure 19), and the system will automatically detect a list of names of possible bus stops. After the user has chosen the bus stop, the user can touch the checkmark  to confirm his or her selection, and the list of next departure time will show up (Figure 20).</p>
   </div>
   <div class="w3-content w3-container w3-padding-32">
-    <h3 class="w3-center">PILOT TEST</h3>
+    <h3 class="w3-center w3-padding-16">PILOT TEST</h3>
     <p>After we built our prototype, we took a careful review on every page first to make sure the links and interactions work well. Then we recruited a participant that resembled the characteristics of our primary persona.</p>
     <p>The test took about 10-12 minutes. As the participant was looking at the screen interacting with the application, team member took notes on their responses to the questions as well as their general behaviors. During the 5 minute free interaction part of the test, one difficulty that user had was figuring out what each symbol on the main menu meant (what feature is represented by each symbol). The picture symbols did not seem intuitive for user to figure out what features they represented so the participant asked during the pilot testing where she needs to go to plan out a trip to go somewhere. She clicked on a few options before finding the next departure feature on the homepage main menu.</p> 
 <P>After interacting with the application for five minutes, the user was able to identify the main features that were made available through the application and was able to complete the tasks asked of her during testing and gave feedback based on her experience with the application depending on the prompting questions that were asked. 
 </p>
-<h3 class="w3-center">HEURISTIC EVALUATION</h3>
+<h3 class="w3-center w3-padding-16">HEURISTIC EVALUATION</h3>
 <P>Our prototype was evaluated by another group of designers and here is a list of findings from their evaluations.</P>
 <li>The search bar in the home screen does not display a clear purpose, user may not know exactly what to use it for </li>
 <li>Main menu has icons that are not intuitive for user to know what functions they offer</li>
@@ -275,13 +280,13 @@ The current issues that we are aiming to solve are based on our interpretation o
 <li>The functionality of each feature on the main menu is not clear as the picture symbols are not intuitive for user to know what they offer. </li>
   </div>
   <div class="w3-container w3-content">
-    <h3 class="w3-center">HIGH FIDELITY PROTOTYPE</h3>
+    <h3 class="w3-center w3-padding-16">HIGH FIDELITY PROTOTYPE</h3>
     <p>After discussing about the pilot test result and the recommendations we got from the heuristic evaluation, we decided to made some changes to our prototype. Below are a few examples of direction to be taken on redesigns of the application.</p>
-    <div class="w3-col m6 w3-center">
+    <div class="w3-col m6 w3-center w3-padding-16">
       <img src="capmetro/mediumfi1.png" alt="mediumfi" width="300">
       <p> Previous Homepage</p>
     </div>
-    <div class="w3-col m6 w3-center">
+    <div class="w3-col m6 w3-center w3-padding-16">
       <img src="capmetro/iPhone 6-7-8 – 5.png" alt="mediumfi" width="300">
       <p> Redesign 1: Homepage with clear labels, locations of stops and improved cognitive affordance.</p>
     </div>
@@ -416,7 +421,8 @@ function toggleFunction() {
     }
 }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+
+    <script  src="js/index.js"></script>
 <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp

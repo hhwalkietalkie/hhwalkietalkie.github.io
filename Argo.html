@@ -6,12 +6,17 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="css/style.css">
 <link href='https://fonts.googleapis.com/css?family=Muli:300|Raleway:300,700' rel='stylesheet' type='text/css'>
   
   <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body {
+  font-size: 100%;
+  font-family: 'Muli', sans-serif;
+  color: #6c6753;
+}
 body, html {
     height: 100%;
     color: #777;
@@ -64,28 +69,32 @@ a{
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i>
-    </a>
+  <header class="header container-fluid">
+  <div class="nav-toggle-wrapper">
+    <button class="nav-toggle-btn">
+                <span class="line"></span>
+            </button>
   </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
-  </div>
-</div>
+  <nav class="header__nav">
+    <ul class="nav">
+      <li class="header__nav__item"><a href="index.html#about" data-ref="about">home</a></li>
+    </ul>
+  </nav>
+  <ul class="header__social-btns">
+    <li>
+      <a class="fa fa-vimeo" href="https://vimeo.com/user73078946"></a>
+    </li>
+    <li>
+      <a class="fa fa-github" href="https://github.com/hhwalkietalkie" target="_blank"></a>
+    </li>
+    <li>
+      <a class="fa fa-facebook" href="https://www.facebook.com/profile.php?id=100013059883523" target="_blank"></a>
+    </li>
+    <li>
+      <a class="fa fa-linkedin" href="https://www.linkedin.com/in/han-han/" target="_blank"></a>
+    </li>
+  </ul>
+</header>
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container" id="home">
@@ -101,7 +110,7 @@ a{
 </div>
 
 <div class="w3-content w3-container w3-padding-64" id="PROCESS">
-  <h3 class="w3-center">OVERALL PROCESS</h3>
+  <h3 class="w3-center w3-padding-16">OVERALL PROCESS</h3>
   <img src="argo/argo final ppt (1)-05.png" class="w3-round w3-image" alt="Photo of Me" width="1200" height="333">
 </div>
 
@@ -109,16 +118,16 @@ a{
 </div>
 
 <div class="w3-content w3-container w3-padding-64" id="TECHNOLOGY">
-  <h3 class="w3-center">TECHNOLOGY RESEARCH</h3>
+  <h3 class="w3-center w3-padding-16">TECHNOLOGY RESEARCH</h3>
   
 <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
+    <div class="w3-col m6 w3-center w3-padding-64">
       <p><b><i class="fa fa-search w3-margin-right"></i>Identify Objects</b></p>
       <p>The app should be able to recognize real-world objects using camera and create label in different languages</p>
     </div>
 
     
-    <div class="w3-col m6 w3-center w3-padding-large">
+    <div class="w3-col m6 w3-center w3-padding-64">
       <p><b><i class="fa fa-file-o w3-margin-right"></i>Generate Label</b></p>
       <p>The object recognization and label generating should be in real time as the users scans their surroudings by camera</p>
      </div>
@@ -140,13 +149,13 @@ a{
 </div>
 
 <div class="w3-content w3-container w3-padding-64" id="COMPETETIVE">
-  <h3 class="w3-center">COMPETETIVE ANALYSIS</h3>
+  <h3 class="w3-center w3-padding-16">COMPETETIVE ANALYSIS</h3>
   <img src="argo/argo final ppt (1)-09.png" class="w3-round w3-image" alt="COMPETETIVE ANALYSIS1" width="1200" height="333">
   <img src="argo/argo final ppt (1)-10.png" class="w3-round w3-image" alt="COMPETETIVE ANALYSIS2" width="1200" height="333">
   </div>
 
   <div class="w3-content w3-container w3-padding-64" id="USER">
-  <h3 class="w3-center">USER RESEARCH<br></h3>
+  <h3 class="w3-center w3-padding-16">USER RESEARCH<br></h3>
   <h4 class="w3-center">User Groups</h4>
   <div class="w3-col m4 w3-center w3-padding-large">
     <img src="argo/USER1.png" class="w3-round w3-image" alt="Tensorflow" width="100" height="100">
@@ -163,7 +172,7 @@ a{
       <p><b>Travelers</b></p>
       </div>
 <div class="w3-content w3-container w3-padding-64" id="USER2">
-    <h4 class="w3-center">Interviews</h4>
+    <h4 class="w3-center w3-padding-16">Interviews</h4>
     <img src="argo/interview.png" class="w3-round w3-image" alt="Interviews" width="1200" height="333">
 <div class="w3-col m4 w3-center w3-padding-large">
 <p><i class="fa fa-users w3-margin-right"></i>7 Paticipants</p>
@@ -196,18 +205,18 @@ language from scratch</p>
 </div>
 
 <div class="w3-content w3-container w3-padding-64">
-  <h3 class="w3-center">TARGET USERS</h3>
+  <h3 class="w3-center w3-padding-16">TARGET USERS</h3>
   <img src="argo/argo final ppt (1)-16.png" class="w3-round w3-image" alt="TARGET USER1" width="1200" height="333">
   <img src="argo/argo final ppt (1)-17.png" class="w3-round w3-image" alt="TARGET USER2" width="1200" height="333">
 </div>
 
 <div class="w3-content w3-container w3-padding-64">
-  <h3 class="w3-center">STORYBOARD</h3>
+  <h3 class="w3-center w3-padding-16">STORYBOARD</h3>
   <img src="argo/storyboard.jpg" class="w3-round w3-image" alt="STORYBOARD" width="1200" height="333">
 </div>
 
 <div class="w3-content w3-container w3-padding-64">
-  <h3 class="w3-center">TASK FLOW</h3>
+  <h3 class="w3-center w3-padding-16">TASK FLOW</h3>
   <img src="argo/user flow.png" class="w3-round w3-image" alt="TASK FLOW" width="1200" height="333">
 </div>
 
@@ -221,12 +230,13 @@ language from scratch</p>
 
   <div class="w3-content w3-container w3-padding-64">
   <H4 class="w3-center">Test Round 1</H4>
-  <img src="argo/TEST1.png" class="w3-round w3-image" alt="TEST1" width="600" style="margin-left: 150px" height="333">
-  <img src="argo/test1-1.png" class="w3-round w3-image" alt="TEST1-1" width="600" style="margin-left: 150px" height="333">
+  <div class="w3-padding-16 w3-center">
+  <img src="argo/TEST1.png" class="w3-round w3-image" alt="TEST1" width="600">
+  <img src="argo/test1-1.png" class="w3-round w3-image" alt="TEST1-1" width="600"></div>
   <p>According to the table, users found task 4 and task 6 very difficult. In the following pages, we
 have outlined some of the important insights that we gathered from user testing round 1
 and came up with some recommendations for medium-fidelity prototype.</p>
-<h4 class="w3-center">Insights and Recommendations</h4>
+<h4 class="w3-center">Insights and Recommendations</h4><br>
 <p>Prototype should be made more efficient or the task should be a little more ditailed.</p>
 <p>Matching should be in less number of steps.</p>
 <p>'Get started' button was confusing</p>
@@ -237,16 +247,17 @@ and came up with some recommendations for medium-fidelity prototype.</p>
 <div class="w3-content w3-container w3-padding-32">
   <H4 class="w3-center">Medium-fi</H4>
   </div>
-  <img src="argo/MEDIUM1.png" class="w3-round w3-image" alt="MEDIUM-fi" width="1900" height="333">
-  <img src="argo/MEDIUM2.png" class="w3-round w3-image" alt="MEDIUM-fi" width="1900" height="333">
+  <img src="argo/MEDIUM1.png" class="w3-round w3-image" alt="MEDIUM-fi" width="1900">
+  <img src="argo/MEDIUM2.png" class="w3-round w3-image" alt="MEDIUM-fi" width="1900">
 
   <div class="w3-content w3-container w3-padding-64">
   <H4 class="w3-center">Test Round 2</H4>
-  <img src="argo/TEST2.png" class="w3-round w3-image" alt="TEST2" width="600" style="margin-left: 150px" height="333">
+  <div class="w3-center w3-padding-16">
+  <img src="argo/TEST2.png" class="w3-round w3-image" alt="TEST2" width="600"></div>
   <p>According to the table, users found task 4 and task 6 very difficult. In the following pag-
 es, we have outlined some of the important insights that we gathered from user test-
 ing round 1 and came up with some recommendations for medium-fidelity prototype.</p>
-<h4 class="w3-center">Insights and Recommendations</h4>
+<h4 class="w3-center">Insights and Recommendations</h4><br>
 <p>Make the 'start game' button look more prominent by changing colors or adding icons to it</p>
 <p>Could have some instructions about the tap and tap matching method before start the game.</p>
 <p>The label should be shown for the image after successfully matched instead of disappearing.</p>
@@ -301,6 +312,7 @@ function toggleFunction() {
     }
 }
 </script>
+    <script  src="js/index.js"></script>
 
 </body>
 </html>

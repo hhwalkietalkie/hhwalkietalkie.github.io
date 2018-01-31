@@ -13,7 +13,11 @@
 
       <link rel="stylesheet" href="css/style.css">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Sacramento", sans-serif;}
+body {
+  font-size: 100%;
+  font-family: 'Muli', sans-serif;
+  color: #6c6753;
+}
 body, html {
     height: 100%;
     color: #777;
@@ -74,28 +78,32 @@ a{
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i>
-    </a>
+  <header class="header container-fluid">
+  <div class="nav-toggle-wrapper">
+    <button class="nav-toggle-btn">
+                <span class="line"></span>
+            </button>
   </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
-  </div>
-</div>
+  <nav class="header__nav">
+    <ul class="nav">
+      <li class="header__nav__item"><a href="index.html#about" data-ref="about">home</a></li>
+    </ul>
+  </nav>
+  <ul class="header__social-btns">
+    <li>
+      <a class="fa fa-vimeo" href="https://vimeo.com/user73078946"></a>
+    </li>
+    <li>
+      <a class="fa fa-github" href="https://github.com/hhwalkietalkie" target="_blank"></a>
+    </li>
+    <li>
+      <a class="fa fa-facebook" href="https://www.facebook.com/profile.php?id=100013059883523" target="_blank"></a>
+    </li>
+    <li>
+      <a class="fa fa-linkedin" href="https://www.linkedin.com/in/han-han/" target="_blank"></a>
+    </li>
+  </ul>
+</header>
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container" id="home">
@@ -127,7 +135,7 @@ a{
 </div>
 
 <div class="w3-content w3-container w3-padding-64" id="COMPETETIVE">
-  <h3 class="w3-center">COMPETETIVE ANALYSIS</h3>
+  <h3 class="w3-center">COMPETITIVE ANALYSIS</h3>
   <h4 class="w3-center">Cooking Instruction&Grocery Shopping Apps</h4>
   <div class="w3-padding-32">
   <img src="chewy/COMA1.png" class="w3-round w3-image" alt="COMPETETIVE ANALYSIS1" width="1200" height="333">
@@ -179,15 +187,16 @@ a{
 </div>
 <div class="w3-content w3-container">
         <p>After collecting our raw contextual data, we organized the work activity notes based on direct quotes from the interviewees. The Work Activity Affinity Diagram (WAAD) was created as soon as we had completed the interviews. We had categorized the notes into clusters based on related themes that we identified from the interview data collected. Then we did a walk through of the Work Activity Affinity Diagram (WAAD) and extracted some representative work activity notes to develop requirements implied in the notes.</p>
-        <img src="chewy/WAAD.png" alt="WAAD" width="1000">
+        <div class="w3-padding-16"><img src="chewy/WAAD.png" alt="WAAD" width="1000"></div>
 </div>
 </div>
 
 <div class="w3-content w3-container">
     <h4 class="w3-center">Personas&Journey Map</h4>
     <p>Based on the interview results, we decided to target on two user groups. And we created two representative personas:</p>
+    <div class="w3-padding-16">
     <img src="chewy/chewy-17.png" alt="Persona1" width="900">
-    <img src="chewy/chewy-18.png" alt="Persona2" width="900">
+    <img src="chewy/chewy-18.png" alt="Persona2" width="900"></div>
     <p>Our journey map focuses on the character of Jamie. Here Jamie is presented as trying to plan a recipe that takes the dietary concerns of her friends into account. To do this she downloads Chewy in the app store. She was able to search for the most appropriate recipe and from that, generate a shopping list, and follow a step-by-step guide to create it.</p>
     <img src="chewy/journey.png" alt="journeymap" width="1300" style="margin-left: -200px">
 </div>
@@ -279,8 +288,9 @@ Use icons to represent each category.
 <div class="w3-content w3-container w3-padding-64">
   <h3 class="w3-center">Information Architecture&Controlled vocabulary</h3>
   <p>With the main functions been decided during our discussions about our low fidelity prototypes, we decided our information architecture and controlled vocabulary.</p>
+  <div class="w3-padding-16">
   <img src="chewy/Picture8.png" alt="information architecture" width="900">
-  <img src="chewy/control.png" alt="controlled vocabulary" width="900">
+  <img src="chewy/control.png" alt="controlled vocabulary" width="900"></div>
 </div>
 
 
@@ -328,5 +338,7 @@ function toggleFunction() {
     }
 }
 </script>
+
+    <script  src="js/index.js"></script>
 </body>
 </html>
