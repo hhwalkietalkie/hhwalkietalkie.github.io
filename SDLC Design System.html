@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<title>Design system</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href='https://fonts.googleapis.com/css?family=Muli:300|Raleway:300,700' rel='stylesheet' type='text/css'>
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+<style>
+body {
+  font-size: 100%;
+  font-family: 'Muli', sans-serif;
+  color: #333;
+}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+
+a{
+  text-decoration: none;
+}
+.user{
+  color: #7f7f7f;
+}
+.designer{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+.rotateimg90 {
+  -webkit-transform:rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.mockup{
+  background-image: url('chewy/Untitled-1.png');
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+  <header class="header container-fluid">
+  <div class="nav-toggle-wrapper">
+    <button class="nav-toggle-btn">
+                <span class="line"></span>
+            </button>
+  </div>
+  <nav class="header__nav">
+    <ul class="nav">
+      <li class="header__nav__item"><a href="index.html#about" data-ref="about">home</a></li>
+    </ul>
+  </nav>
+  <ul class="header__social-btns">
+    <li>
+      <a class="fa fa-vimeo" href="https://vimeo.com/user73078946"></a>
+    </li>
+    <li>
+      <a class="fa fa-github" href="https://github.com/hhwalkietalkie" target="_blank"></a>
+    </li>
+    <li>
+      <a class="fa fa-facebook" href="https://www.facebook.com/profile.php?id=100013059883523" target="_blank"></a>
+    </li>
+    <li>
+      <a class="fa fa-linkedin" href="https://www.linkedin.com/in/han-han/" target="_blank"></a>
+    </li>
+  </ul>
+</header>
+
+
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="CONCEPT">
+  <br><br>
+  <h3 class="w3-center">SDLC Design System</h3>
+  <br><br>
+  <img src="design system/design system overview.png" style="width: 100%"><br><br><br><h3 class="w3-center">CONCEPT</h3><br><br>
+  <p>Design system is an inclusive constantly evolving ecosystem where everyone is invited to participate.</p><br><br>
+  <div class="w3-col m4 user">User:</div>
+  <div class="w3-col m4 designer">Designer</div>
+  <div class="w3-col m4 designer">Developer</div>
+  <div>
+    <div class="w3-col m4 user">Goals:</div>
+    <div class="w3-col m4">It becomes much easier to create consistent experiences across different platforms.<br><br>Scale: There’s more space for exploration because designers are no longer reinventing the wheel.
+</div>
+    <div class="w3-col m4">Design Systems provide a shared library of reusable components and guidelines. Building products becomes much faster.
+</div>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="process">
+ <h3 class="w3-center">PROCESS</h3>
+ <br><br>
+ <h4>Metric 1 - Component Prioritization Workshop</h4>
+ <p>To decide which components to include, I conducted a component prioritazation workshop.</p>
+ <div class="w3-col m4">Participants:4 developers</div>
+  <div class="w3-col m8"></div>
+  
+</div>
+
+
+
+
+
+
+
+<footer class="container">
+  <section id="credit" class="row">
+    <p>
+     @ 2018 Han Han
+    </p>
+  </section>
+</footer>
+ 
+<!-- Add Google Maps -->
+<script>
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+    <script  src="js/index.js"></script>
+</body>
+</html>
