@@ -100,7 +100,7 @@ a{
   <h3 class="w3-center">SDLC Design System</h3>
   <br><br>
   <img src="design system/design system overview.png" style="width: 100%"><br><br><br><h3 class="w3-center">CONCEPT</h3><br><br>
-  <p>Design system is an inclusive constantly evolving ecosystem where everyone is invited to participate.</p><br><br>
+  <p>As a consulting firm, SDLC Partners not only provides services to external clients but also owns a number of in-house projects which are usually given fewer attention. As a result, those in-house projects suffers from insufficient resources and inconsistency. Having a design system, an inclusive constantly evolving ecosystem where everyone is invited to participate, can efficiently solve this problem.</p><br><br>
   <div class="w3-col m4 user">User:</div>
   <div class="w3-col m4 designer">Designer</div>
   <div class="w3-col m4 designer">Developer</div>
@@ -114,7 +114,7 @@ a{
 </div>
 
 <div class="w3-content w3-container">
-  <div class="w3-col m4 user">Teamsize:</div>
+  <div class="w3-col m4 user">Team size:</div>
   <div class="w3-col m8">1 Designer and 2 developers</div>
   <a href="https://sdlc-design-system.firebaseapp.com/" style="color: blue">Check out the demo!</a>
 </div>
@@ -122,30 +122,37 @@ a{
 <div class="w3-content w3-container w3-padding-64" id="process">
  <h3 class="w3-center">PROCESS</h3>
  <br><br>
+ <p>Besides designing the style and components, here are some metrics that I used to gather user feedbacks.</p>
  <h4>Metric 1 - Component Prioritization Workshop(Top Ranking)</h4>
  <br>
  <div class="w3-col m4">
- <p>To decide which components to include, I conducted a component prioritazation workshop.</p>
+ <p>To decide which components to include, I conducted a component prioritization workshop.</p>
  <p>Participants : 4 developers from SDLC</p>
  <p>Participants are asked to</p><p>1. Cross out at least 2 sections that are unnecessary or unimportant.</p>
 <p>2. Check up to 25 components that are most important to include in the first version of the design system.</p>
 <p>3. Add a star by up to 5 important components that we should expect to spend extra effort getting right.</p>
 </div>
   <div class="w3-col m8"><img src="design system/WORKSHOP.png" width="100%"></div>
-
-  <div class="w3-col m4">
-    <p>Result</p>
+<div class="w3-padding-64">
+  <div class="w3-col m4" style="padding-right: 30px;">
+    <p><b>Result</b></p>
+    <p>Image, charts and graphics, responsive text scaling, sidebar, sort and filter and video seems to need extra effort to work on. </p>
+    <p>Responsiveness, especially mobile view of the components need to be considered.</p>
+    <p>Design principles, as well as basic layout rules and grid system need to be explained.</p>
   </div>
   <div class="w3-col m8"><img src="design system/workshopresult.png" width="100%" style="padding-bottom: 40px"></div>
+  </div>
 <h4>Metric 2 - Design Critique Workshop(Rose/Buds/Thorn)</h4>
+<br><br>
+<p>To gather feedback from other designers, I conducted design critique sessions among HCD(Human Centered Design) group every month showing them the current progress.</p>
 <div class="w3-col m6 w3-padding-64"><img src="design system/critique1.jpg" width="100%"></div>
 <div class="w3-col m6 w3-padding-64"><img src="design system/critique2.jpg" width="100%"></div>
-<div class="w3-padding-64"><p>After reviewing the design system, SDLC HCD group were asked to document their observations and opionions on sticky notes as positive, negative or having potential. </p></div>
+<div class="w3-padding-64"><p>After reviewing the design system, SDLC HCD group were asked to document their observations and opinions on sticky notes as positive, negative or having potential. </p></div>
 <img src="design system/Untitled_Artwork 2.png" width="100%">
-<div class="w3-padding-64"><p>Team members were asked to sort their notes based on similarities.</p></div>
-<h4>Takeaways:</h4>
-<p>E.g. Test the accessibility of colors.</p>
-<p>Solution: Adjust color palette to meet WCAG AA standards.</p>
+<div class="w3-padding-64"><p>Team members were asked to sort their notes based on similarities. And we would have an idea of how important the problems were.</p></div>
+<h4>Example Takeaways:</h4>
+<p>1. Test the accessibility of colors.</p>
+<p>For color palette, at first I used the colors from SDLC brand book which were developed for marketing use. After a design session, I was suggested to adjust the color palette to meet WCAG AA standards. After reviewing the color contrast, I found that most of the dominant and accent colors need to be adjust. Here are some of them:</p>
 <div class="w3-col m4"><img src="design system/brandcolor1.png" width="100%"><p class="w3-center">before</p></div>
 <div class="w3-col m2"><h2>3.74:1<br><br>2.98:1<br><br>1.8:1</h2><h5>6.08:1</h5></div>
 <div class="w3-col m4"><img src="design system/brandcolor2.png" width="100%"><p class="w3-center">after</p></div>
@@ -154,6 +161,7 @@ a{
 <div class="w3-col m2"><h2>3.0:1<br><h5>15.9:1</h5><h2>3.3:1</h2><h5>10.9:1</h5></div>
 <div class="w3-col m4"><img src="design system/blue.png" width="97%" style="margin-left: 2%; margin-top: 2%"><p class="w3-center">after</p></div>
 <div class="w3-col m2"><h5>4.64:1</h5></div>
+
 <div class="w3-container w3-padding-64">
   <div class="w3-col m6">
     <br>
@@ -162,13 +170,19 @@ a{
 <div class="w3-col m6"><br><img src="design system/cta standard.png" class="w3-center" width="80%"></div>
 </div>
 
+<div class="w3-container w3-padding-64">
+  <p>2. Redesign the icons considering the minimum stroke size.</p>
+  <br>
+  <div class="w3-col m3" style="padding: 20px;">Before:</div>
+  <div class="w3-col m9"><img src="design system/Picture1.png" width="100%" style="margin-left: 2%, margin-bottom:20px;"></div>
+  <div class="w3-col m3" style="padding: 20px;">After:</div>
+  <div class="w3-col m9"><img src="design system/Picture2.png" width="100%"></div>
 </div>
 
-
-
-
-
-
+<div class="w3-container w3-padding-64">
+<p>If you would like to know more of this design system, please
+  <a href="https://sdlc-design-system.firebaseapp.com/" style="color: blue">Check out the demo!</a></p>
+</div>
 
 <footer class="container">
   <section id="credit" class="row">
