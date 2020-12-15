@@ -126,7 +126,8 @@ html,
 body {
 	font-size: 100%;
 	font-family: 'Muli', sans-serif;
-	color: #6c6753;
+	color: #363636;
+	  font-weight: 600;
 }
 
 /*** Header ***/
